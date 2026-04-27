@@ -1,0 +1,26 @@
+.topmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: rgb(101, 101, 101);
+}
+.topmenu p {
+    font-weight: 600;
+    color: white;
+}
+.topmenu a {
+    display: block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: aqua;
+    letter-spacing: 1px;
+}
+.topmenu a:visited {
+    color: rgb(214, 228, 240);
+}
+.topmenu a:hover,
+.topmenu a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(174, 201, 201);
+}

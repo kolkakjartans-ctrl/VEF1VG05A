@@ -1,0 +1,30 @@
+body{
+    max-width: 60rem; /(960px)/
+    border:1px solid red; /border-width + -style + -color;/
+    padding: 2rem;
+    margin: 1rem auto; /* top+bottom & left + right */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: rgb(14, 8, 81);
+    background-color: rgb(237, 237, 253);
+}
+
+
+h1,h2,h3{
+    color:rgb(109, 39, 150);
+}
+.poem {
+    padding-left: 3rem;
+}
+.poem strong{
+    font-size: 1.5rem;
+    color:rgb(109, 39, 150);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.strongtxt{
+    color: rgb(78, 78, 210);
+}

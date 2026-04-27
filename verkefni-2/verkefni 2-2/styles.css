@@ -1,0 +1,52 @@
+body {
+    max-width: 768px;
+    margin: auto;
+}
+nav {
+    background-color:antiquewhite;
+    text-align: center;
+}
+/* tenglar í nav */
+nav a:link {
+    display: inline-block;
+    padding: .5rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(138, 11, 11);
+}
+nav a:visited {
+    color: rgb(164, 35, 35);
+}
+nav a:hover,
+nav a:active {
+    color: rgb(142, 11, 11);
+    background-color: white;
+}
+aside a:link {
+    color: rgb(164, 0, 0);
+}
+aside a:visited {
+    color: rgb(173, 28, 28);
+}
+aside a:hover {
+    text-decoration: none;
+}
+footer {
+    background-color: antiquewhite;
+}
+footer p {
+    text-align: center;
+    border-top: 1px solid brown;
+    padding: 2rem;
+}
+.bigL {
+    font-size: 4rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 2px;
+}
+article img {
+    float: right;
+    width: 180px;
+    padding-left: 1rem;
+}
