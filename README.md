@@ -10,3 +10,4 @@ hér eru verkefni sem eru unnin í vef
 - [verkefni 3](verkefni-3)
 - [verkefni 4](verkefni-4)
 - [verkefni 5](verkefni-5)
+- [verkefni 6](verkefni-6)
