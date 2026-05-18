@@ -1,0 +1,196 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6060c0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Layout-ið */
+.page-wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* aside */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 180px;
+    gap: 20px;
+}
+
+aside {
+    background-color: #4a4aaa;
+    border: 2px solid #7777cc;
+    padding: 16px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+aside p {
+    margin-bottom: 12px;
+    color: #ddddff;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    border-top: 1px solid #6666bb;
+    padding: 6px 0;
+}
+
+aside ul li a {
+    color: #ccccff;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+aside ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Aðal Content Box */
+.content-box {
+    flex: 1;
+    background-color: #1a1a8a;
+    border: 2px solid #4444cc;
+    padding: 28px 32px;
+    color: #ffffff;
+    line-height: 1.7;
+    min-width: 0; /* prevents flex overflow */
+}
+
+.content-box h1 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: #ffffff;
+    border-bottom: 2px solid #4444cc;
+    padding-bottom: 10px;
+}
+
+.content-box h2 {
+    font-size: 1.2rem;
+    margin: 24px 0 12px;
+    color: #aaaaff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.content-box p {
+    margin-bottom: 14px;
+    font-size: 0.97rem;
+    color: #e0e0ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+/* Bandcamp iframe */
+.bandcamp-wrap {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.bandcamp-wrap iframe {
+    display: block;
+    width: 30%;
+    min-width: 200px;
+    height: 42px;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a4a;
+    color: #ccccff;
+    margin-top: 30px;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer iframe {
+    max-width: 100%;
+    height: 250px;
+    border: 0;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.mark {
+    text-align: center;
+}
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .content-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-box h1 {
+        font-size: 1.4rem;
+    }
+
+    .bandcamp-wrap iframe {
+        width: 80%;
+    }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+    }
+
+    aside {
+        flex: none;
+        width: 100%;
+    }
+
+    .content-box {
+        padding: 16px;
+    }
+
+    .bandcamp-wrap iframe {
+        width: 100%;
+    }
+
+    footer iframe {
+        height: 200px;
+    }
+}
